@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1711466245 source:d:\luizo\downloads\algoritmos utfpr\exercicios - estrutura sequencial\exercicios\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
