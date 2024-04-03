@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1712153646 source:d:\luizo\downloads\algoritmos utfpr\exercicios - estrutura condicional\selecao_simples\exercicio_selecaosimples\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
