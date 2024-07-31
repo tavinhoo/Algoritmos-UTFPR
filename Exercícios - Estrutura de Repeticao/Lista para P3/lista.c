@@ -22,9 +22,9 @@ int main() {
 	// 	
 	// 	if(denominador != 0) {
 	// 		resultado = (float)numerador/denominador;
-	// 		printf("Para numerador igual a %i e denominador igual a %i, o resultado é %.2f\n", numerador, denominador, resultado);
+	// 		printf("Para numerador igual a %i e denominador igual a %i, o resultado Ã© %.2f\n", numerador, denominador, resultado);
 	// 	} else {
-	// 		printf("ERRO: divisão por zero\n");
+	// 		printf("ERRO: divisÃ£o por zero\n");
 	// 	}
 	// 	
 	// } while(2 > 1);
@@ -92,20 +92,20 @@ int main() {
 	// 	printf("%i", soma);
 	// }	
 	
-	// ********************** CONTINUAÇÃO **********************
+	// ********************** CONTINUAÃ‡ÃƒO **********************
 	
-	// Exercício 6
+	// ExercÃ­cio 6
 	
 	/* 
 	
-	Crie um programa em linguagem C com a estrutura de repetição com teste no incio (while) que
-	gere os primeiros n termos da sequência de Fibonacci, onde n é fornecido pelo usuário. A sequência
-	de Fibonacci é uma sucessão de números naturais, em que os dois primeiros termos contêm o valor
-	1(um) e, a partir do terceiro termo, sua construção é dada pela soma de seus dois termos antecessores.
-	Caso de teste para o exercício:
+	Crie um programa em linguagem C com a estrutura de repetiÃ§Ã£o com teste no incio (while) que
+	gere os primeiros n termos da sequÃªncia de Fibonacci, onde n Ã© fornecido pelo usuÃ¡rio. A sequÃªncia
+	de Fibonacci Ã© uma sucessÃ£o de nÃºmeros naturais, em que os dois primeiros termos contÃªm o valor
+	1(um) e, a partir do terceiro termo, sua construÃ§Ã£o Ã© dada pela soma de seus dois termos antecessores.
+	Caso de teste para o exercÃ­cio:
 	
-	Para n = 7, a sequência de Fibonacci: é 1, 1, 2, 3, 5, 8, 13;
-	Para n = 10, a sequência de Fibonacci: é 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+	Para n = 7, a sequÃªncia de Fibonacci: Ã© 1, 1, 2, 3, 5, 8, 13;
+	Para n = 10, a sequÃªncia de Fibonacci: Ã© 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 	
 	*/
 	
@@ -139,27 +139,8 @@ int main() {
 		}
 		i++;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//********************** Exercício 4 **********************
+
+	//********************** ExercÃ­cio 4 **********************
 	
 	// int num = 1000, n;
 	// double acumulador = 0.0;
@@ -176,9 +157,9 @@ int main() {
 	// 	num -= 3;
 	// }
 	// 
-	// printf("para n=%i, o valor da soma é: %.2f", n, acumulador);
+	// printf("para n=%i, o valor da soma Ã©: %.2f", n, acumulador);
 	
-	//********************** Exercício 2 **********************
+	//********************** ExercÃ­cio 2 **********************
 	
 	// int maior, n;
 	// 
