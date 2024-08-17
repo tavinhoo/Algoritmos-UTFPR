@@ -1,0 +1,211 @@
+**************************************************************************************************
+1. Faça um programa que apresente a mensagem “Olá, mundo!!!”
+**************************************************************************************************
+
+entrada: 
+processamento:
+saída:  "Olá, mundo!!!"
+
+inicio 
+	escreva("Olá, mundo!!!")
+fim
+
+**************************************************************************************************
+2. Faça um programa que concatene as seguintes mensagens em uma só: o “Eu estou ” o “Fazendo “
+o “concatenação!”
+**************************************************************************************************
+entrada: 
+processamento:
+saída:  "Eu estou Fazendo concatenação"
+
+inicio 
+	escreva("Eu estou ","Fazendo ","concatenação")
+fim
+**************************************************************************************************
+3. Faça um programa que concatene as seguintes mensagens em uma só: o “Olá, amigo! ” o “Este
+texto tem uma vírgula dentro das aspas. ” o “Mas eu sei que quando está dentro das aspas ela
+representa apenas uma vírgula. ” o “E quando está fora representa o operador de concatenação.”
+**************************************************************************************************
+
+entrada: 
+processamento:
+saída:  "Olá, amigo! ","Este texto tem uma vírgula dentro das aspas. ","Mas eu sei
+	que quando está dentro das aspas ela representa apenas uma vírgula. ","E quando está fora representa o operador
+	de concatenação."
+
+
+inicio
+	escreva("Olá, amigo! ","Este texto tem uma vírgula dentro das aspas. ","Mas eu sei
+	que quando está dentro das aspas ela representa apenas uma vírgula. ","E quando está fora representa o operador
+	de concatenação.")
+fim
+
+**************************************************************************************************
+4. Faça um programa que peça o nome do usuário e, em seguida, digite a mensagem: “Seja bem vindo,
+**************************************************************************************************
+
+entrada: 
+processamento:
+saída:  "Olá, mundo!!!"
+
+
+entrada: nome
+processamento: nome_usuario
+saída:  "Seja bem vindo, ", nome_usuario
+
+inicio 
+	cadeia nome_usuario
+	escreva("Insira o seu nome: ")
+	leia(nome_usuario)
+	escreva("Seja bem vindo, ", nome_usuario) 
+fim
+
+**************************************************************************************************		
+5. Faça um programa que peça a idade do usuário e, em seguida, digite a mensagem: “Legal! Você tem
+anos!”.
+**************************************************************************************************
+
+entrada: idade
+processamento: 
+saída:  "Legal! Você tem ",idade,"anos!"
+
+inicio 
+	inteiro idade
+	escreva("Insira sua idade: ")
+	leia(idade)
+	escreva("Legal! Você tem ",idade,"anos!")
+fim
+
+**************************************************************************************************
+6. Faça um programa que peça a idade do usuário, depois o ano de nascimento do usuário, e apresente
+a mensagem: “Você tem anos e nasceu em !”
+**************************************************************************************************
+
+entrada: idade_usuario
+processamento: ano_nascimento <- 2024 - idade_usuario
+saída:  "Você tem ", idade_usuario, " e nasceu em ", ano_nascimento
+
+
+inicio 
+	inteiro idade_usuario, ano_nascimento
+	escreva("Informe sua idade: ")
+	leia(idade_usuario)
+
+	ano_nascimento <- 2024 - idade_usuario
+	
+	escreva("Você tem ", idade_usuario, " e nasceu em ", ano_nascimento)
+	
+fim
+**************************************************************************************************
+7. Faça um programa que peça o ano de nascimento do usuário e apresente sua provável idade.
+**************************************************************************************************
+
+entrada: ano_nascimento
+processamento: possivel_idade <- 2024 - ano_nascimento
+saída:  "Você tem ",possivel_idade, " anos"
+
+
+inicio
+	inteiro ano_nascimento, possivel_idade
+	escreva("Informe seu ano de nascimento: ")
+	leia(ano_nascimento)
+
+	possivel_idade <- 2024 - ano_nascimento
+
+	escreva("Você tem ",possivel_idade, " anos")
+fim	
+
+**************************************************************************************************
+8. Faça um programa que peça a idade do usuário e apresente seu provável ano de nascimento.
+**************************************************************************************************
+
+entrada:  idade
+processamento: ano_nascimento <- 2024 - idade
+saída: "Você nasceu em ", ano_nascimento
+
+inicio 
+
+	inteiro idade, ano_nascimento
+	escreva("Informe sua idade: ")
+	leia(idade)
+
+	ano_nascimento <- 2024 - idade
+	escreva("Você nasceu em ", ano_nascimento)
+fim
+
+
+**************************************************************************************************
+9. Faça um programa que peça uma temperatura em graus célsius e apresente seu respectivo valor
+em farenheits. O cálculo de conversão é: F= (9*C/5) + 32.
+**************************************************************************************************
+
+entrada: c
+processamento: f <- (9*c/5) + 32
+saída:  "Temperatura em Farenheits: ", f
+
+
+inicio 
+	real c, f
+	
+	escreva("Insira a temperatura em Celsius: ")
+	leia(c)
+
+	f <- (9*c/5) + 32
+	
+	escreva("Temperatura em Farenheits: ", f)
+fim
+
+
+**************************************************************************************************
+10. Faça um programa que peça uma temperatura em graus farenheits e apresente seu respectivo
+valor em celsius. O cálculo de conversão é: C= 5*(F-32)/9.
+**************************************************************************************************
+
+entrada: f
+processamento: c <- (5*(f-32))/9
+saída:  "Temperatura em Celsius : ", c
+
+
+inicio 
+	real c, f
+
+	escreva("Insira a temperatura em Celsius: ")
+	leia(f)
+	c <- (5*(f-32))/9
+
+	escreva("Temperatura em Celsius : ", c)
+fim
+
+**************************************************************************************************
+11. Faça um programa que peça um valor inteiro (e o armazene em uma variável de nome a). Peça um
+segundo valor inteiro (e o armazene em uma variável de nome b). E, troque o valor da variável a por
+b e vice-versa. Por exemplo, se o usuário digitar primeiro 2, depois 6 (a=2 e b=6), no fim do programa,
+o valor de a deverá ser 6 e o de b deverá ser 2. Por fim, apresentar os resultados para o usuário.
+**************************************************************************************************
+
+entrada: a, b
+
+processamento: varAux <- b
+		b <- a
+		a <- varAux
+
+saída:  "a vale: ", a," e b vale: ",b
+
+
+inicio
+
+	inteiro a, b, auxVar
+	escreva("Insira o valor para a: ")
+	leia(a)
+
+	escreva("Insira o valor para b: ")
+	leia(b)
+	
+	varAux <- b
+	b <- a
+	a <- varAux
+
+	escreva("a vale: ", a," e b vale: ",b)
+
+fim
+

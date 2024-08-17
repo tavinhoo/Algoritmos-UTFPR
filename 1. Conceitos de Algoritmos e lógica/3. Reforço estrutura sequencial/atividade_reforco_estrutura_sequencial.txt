@@ -1,0 +1,245 @@
+*************************************************************************
+01) Ler as 4 notas bimestrais de um aluno, calcular e apresentar a média aritmética
+*************************************************************************
+
+entrada: n1, n2, n3, n4
+processamento: media <- (n1 + n2 + n3 + n4)/4
+saída: media
+
+inicio
+	real n1, n2, n3, n4, media
+
+	escreva("Insira a nota 1")
+	leia(n1)
+	escreva("Insira a nota 2")
+	leia(n2)
+	escreva("Insira a nota 3")
+	leia(n3)	
+	escreva("Insira a nota 4")
+	leia(n4)
+
+	media <- (n1 + n2 + n3 + n4)/4
+
+	escreva("Sua média foi: " + media)
+fim 
+
+*************************************************************************
+02) Ler o raio de uma circunferência, calcular e apresentar sua área
+*************************************************************************
+
+entrada: raio
+processamento: area <- 3.14 * raio ^ 2.0
+saída: area
+
+inicio 
+
+	real area, raio
+
+	escreva("Insira o raio: ")
+	leia(raio)
+
+	area <- 3.14 * raio ^ 2.0
+
+	escreva("A area da circunferencia é :" + area)
+	
+fim
+
+*************************************************************************
+03)
+*************************************************************************
+
+entra: raio_t, altura_t, preco_lata
+processamento: area_t <- (2 * pi * raio_t * altura_t) + (2 * pi * raio_t ^ 2)
+		qtd_necess_lata <- area_t \ qtd_area_p_lata
+		preco_final <- qtd_necess_lata * preco_lata
+
+saida: "Você precisará de " + qtd_necess_lata + " e pagará: " + preco_final + "R$"
+
+inicio
+
+    real altura_t, raio_t, preco_lata, qtd_latas, preco_final, pi
+
+    pi = 3.1415
+
+    escreva("Insira a altura do tanque: ")
+    leia(altura_t)
+
+    escreva("Insira a altura do tanque: ")
+    leia(raio_t)
+
+    escreva("Insira preço da lata de tinta: ")
+    leia(preco_lata)
+
+    qtd_latas = (2 * pi * raio_t * altura_t + 2 * pi * raio_t * raio_t) / 15
+    preco_final = preco_lata * qtd_latas
+
+    escreva("Você precisará de " + qtd_latas + " e o preço será de: R$" + preco_final)
+
+fim
+
+*************************************************************************
+04)
+*************************************************************************
+entrada: h_trabalhadas, h_ausente, h_extra, salario_min
+processamento:  salario_final = h_trabalhadas * 0.04 * salario_min + h_extra * 0.06 * salario_min - h_ausente * 0.04 * salario_min
+    salario_final -= salario_final * 0.11
+
+saída: salario_final
+
+inicio
+
+    real h_trabalhadas, h_ausente, h_extra, salario_min, salario_final
+
+    escreva("Insira a quantidade de horas trabalhadas: ")
+    leia(h_trabalhadas)
+
+    escreva("Insira a quantidade de horas ausentes: ")
+    leia(h_ausente)
+
+    escreva("Insira a quantidade de horas extras: ")
+    leia(h_extra)
+
+    escreva("Insira o valor do salário mínimo: ")
+    leia(salario_min)
+
+    salario_final = h_trabalhadas * 0.04 * salario_min + h_extra * 0.06 * salario_min - h_ausente * 0.04 * salario_min
+    salario_final -= salario_final * 0.11
+
+    escreva("O salário final será de: R$" + salario_final)
+	
+fim
+
+
+*************************************************************************
+05)
+*************************************************************************
+
+entrada: (salario), (dependentes)
+
+processamento: salario_familia = ((salario/dependentes) * 0.02) * dependentes
+
+saída: salario_familia
+
+inicio
+	real salario, salario_familia
+ 	inteiro dependentes
+
+
+	escreva("Insira o seu salário: ")
+	leia(salario)
+	escreva("Insira o numero de dependentes: ")
+	leia(dependentes)
+
+	salario_familia = ((salario/dependentes) * 0.02) * dependentes
+
+	escreva("O salario familia corresponde a R$ " + salario_familia)
+fim
+
+
+
+*************************************************************************
+06)
+*************************************************************************
+entrada: valor_inicial
+
+processamento: lucro = valor_inicial * 0.15
+	ipi = valor_inicial * 0.11
+	icm = valor_inicial * 0.17
+	valor_final = valor_inicial + lucro + ipi + icm
+
+saída: valor_final, lucro, ipi, icm
+
+
+inicio
+
+	real valor_inicial, valor_final, lucro, ipi, icm
+
+	escreva("Insira o valor de fabricação do carro: ")
+	leia(valor_inicial)
+
+	lucro = valor_inicial * 0.15
+	ipi = valor_inicial * 0.11
+	icm = valor_inicial * 0.17
+
+	valor_final = valor_inicial + lucro + ipi + icm
+
+	escreva("Valor final automóvel: " + valor_final + "\n" + "Lucro : " + lucro + "\n" + "IPI : " + ipi + "\n" + "ICM: " + icm)
+ 
+fim
+
+
+
+*************************************************************************
+07)
+*************************************************************************
+
+entrada: tempo_viagem, vel_media
+processamento: qtd_galoes = ((tempo_viagem * vel_media) / 60)
+saída: qtd_galoes
+
+inicio
+
+  real tempo_viagem, vel_media, qtd_galoes
+
+  escreva("Insira o tempo gasto na viagem: ")
+  leia(tempo_viagem)
+
+  escreva("Insira a velocidade media durante a viagem: ")
+  leia(vel_media)
+
+  qtd_galoes = ((tempo_viagem * vel_media) / 60)
+
+  escreva("Quantidade necessaria de galões: " + qtd_galoes)
+
+fim	
+
+*************************************************************************
+08)
+*************************************************************************
+
+entrada: x1, x2, y1, y2
+processamento: distancia = ((x2 - x1)^2.0 + (y2 - y1)^2.0)^(0.5)
+saída: distancia
+
+inicio
+  real x1, x2, y1, y2, distancia
+
+  escreva("Insira x do primeiro ponto: ")
+  leia(x1)
+  escreva("Insira y do primeiro ponto: ")
+  leia(y1)
+
+  escreva("Insira x do segundo ponto: ")
+  leia(x2)
+  escreva("Insira y do segundo ponto: ")
+  leia(y2)
+
+  distancia = ((x2 - x1)^2.0 + (y2 - y1)^2.0)^(0.5)
+
+  escreva("A distancia entre o dois pontos é de: " + distancia)
+fim
+
+*************************************************************************
+09)
+*************************************************************************
+entrada: qtd_alunos
+
+processamento:qtd_grupos = qtd_alunos \ 4 
+    		restantes = qtd_alunos % 4
+saída: qtd_grupos, restantes
+
+
+inicio
+    inteiro qtd_alunos, qtd_grupos, restantes
+
+    escreva("Insira a quantidade total de alunos: ") 
+    leia(qtd_alunos)
+
+    qtd_grupos = qtd_alunos \ 4 
+    restantes = qtd_alunos % 4
+
+    escreva("Quantidade possivel de grupos: " + qtd_grupos + "\n")
+    escreva("Quantidades de alunos restantes: " + restantes)
+fim
+
+
